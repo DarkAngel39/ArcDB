@@ -1,0 +1,8 @@
+This project is a continuation of Whydb (http://www.whydb.org/) and later of LOE db (http://dev.landofelves.net/). All fixes
+from these db's are added + many more fixes, tha data for whom is obtained from from:
+
+TDB - http://www.trinitycore.org/
+YTDB - http://ytdb.ru/
+UDB - https://svn.code.sf.net/p/unifieddb/code/
+
+Many thanks to all the contributors of these projects.
