@@ -1,3 +1,6 @@
+DELETE FROM `db_version` WHERE `db_name`='ArcDB' AND `revision`=1 AND `game_version`='3.3.5a' AND `LastUpdate`='2015_01_07_01_random_fixes';
+INSERT INTO `db_version` (`db_name`,`revision`,`game_version`,`LastUpdate`) VALUES ('ArcDB',1,'3.3.5a','2015_01_26_01_random_fixes');
+
  -- Everfrost Chip respawn
 SET @GUID1 := 49591;
 SET @GUID2 := 61693;

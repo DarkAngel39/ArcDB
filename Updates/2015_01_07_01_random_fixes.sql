@@ -1,5 +1,5 @@
 DELETE FROM `db_version` WHERE `db_name`='ArcDB' AND `revision`=1 AND `game_version`='3.3.5a' AND `LastUpdate`='2014_11_21_01_factions';
- -- INSERT INTO `db_version` (`db_name`,`revision`,`game_version`,`LastUpdate`) VALUES ('ArcDB',1,'3.3.5a','2015_01_07_01_random_fixes');
+INSERT INTO `db_version` (`db_name`,`revision`,`game_version`,`LastUpdate`) VALUES ('ArcDB',1,'3.3.5a','2015_01_07_01_random_fixes');
 
  -- Fix item drop for quest 2605 - The Thirsty Goblin
 UPDATE `loot_creatures` SET `normal10percentchance`=100,`normal25percentchance`=100,`heroic10percentchance`=100,`heroic25percentchance`=100 WHERE `entryid`=5481 AND `itemid`=8428 AND `normal10percentchance`=10.27 AND `normal25percentchance`=10.27 AND `heroic10percentchance`=10.27 AND `heroic25percentchance`=10.27 AND `mincount`=1 AND `maxcount`=1;
