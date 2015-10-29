@@ -1,6 +1,8 @@
 DELETE FROM `npc_gossip_textid` WHERE `creatureid` IN (18927,19148,19169,19171,19172,19173,19175,19176,19177,19178,20102);
-DELETE FROM `creature_spawns` WHERE `id` BETWEEN '400000' AND '400058';
-DELETE FROM `gameobject_spawns` WHERE `id` BETWEEN '517000' AND '522111';
+SET @GGUID := 516999;
+SET @CGUID := 399999;
+DELETE FROM `creature_spawns` WHERE `id` BETWEEN @CGUID+1 AND @CGUID+77;
+DELETE FROM `gameobject_spawns` WHERE `id` BETWEEN @GGUID+1 AND @GGUID+5883;
 DELETE FROM `creature_quest_starter` WHERE `id` IN ('6740', '18927', '19169', '19175', '19177', '19178', '19148', '19171', '19172', '19173', '19176') AND `quest` IN ('8356', '11356', '11357', '11356');
 DELETE FROM `creature_quest_starter` WHERE `id` IN ('5111', '6741', '6826', '6735', '11814', '6929', '6746' ) AND `quest` BETWEEN '8353' AND '8360';
 
