@@ -1,3 +1,6 @@
+DELETE FROM `db_version` WHERE `db_name`='ArcDB' AND `revision`=1 AND `game_version`='3.3.5a' AND `LastUpdate`='2015_04_14_02_Uldaman_waypoints';
+INSERT INTO `db_version` (`db_name`,`revision`,`game_version`,`LastUpdate`) VALUES ('ArcDB',1,'3.3.5a','2016_07_12_random_fixes');
+
 UPDATE `creature_spawns` SET `flags`=`flags`-33554432 WHERE `flags` = `flags`|33554432 AND `entry`=19733;
 
 UPDATE `creature_spawns` SET `movetype`=0, `CanFly`=1 WHERE `id`=81860;
