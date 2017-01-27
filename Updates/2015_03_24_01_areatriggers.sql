@@ -25,8 +25,8 @@ INSERT INTO `areatriggers` (`entry`,`type`,`map`,`screen`,`name`,`position_x`,`p
 	(2547,4,0,0,'Scholomance - Exit Porch Target 001','1399.42','-2574.59','107.786','6.28319',0,0),
 	(2548,4,0,0,'Scholomance - Exit Porch Target 001','1399.42','-2574.59','107.786','6.28319',0,0),
 	(2549,4,0,0,'Scholomance - Exit Porch Target 001','1399.42','-2574.59','107.786','6.28319',0,0),
-	--(4233,4,530,530,'Eversong Woods - Duskwither UP Target','9331.49','-7812.27','136.569','5.23599',0,0),
-	--(4267,4,530,530,'Eversong Woods - Duskwither DOWN Target','9334.03','-7880.02','74.9095','2.35619',0,0),
+	-- (4233,4,530,530,'Eversong Woods - Duskwither UP Target','9331.49','-7812.27','136.569','5.23599',0,0),
+	-- (4267,4,530,530,'Eversong Woods - Duskwither DOWN Target','9334.03','-7880.02','74.9095','2.35619',0,0),
 	(4304,4,530,530,'Hellfire Ramparts - Omor Exit Target','-233.33','3199.71','-50','0.785398',0,0),
 	(4612,4,530,530,'The Botanica(exit)','3407.11','1488.48','182.838','2.50112',0,0),
 	(4614,4,530,530,'The Mechanar(exit)','2869.89','1552.76','252.159','0.733993',0,0),
@@ -71,4 +71,4 @@ INSERT INTO `areatriggers` (`entry`,`type`,`map`,`screen`,`name`,`position_x`,`p
 	(5330,6,617,617,'Arena - Dalaran Arena - Teleport Target','1291.57','792.965','8.11463','0',0,0),
 	(5331,6,617,617,'Arena - Dalaran Arena - Teleport Target','1291.57','792.965','8.11463','0',0,0),
 	(5447,6,618,618,'Arena - Orgrimmar - Teleport Target 3','763.365','-284.29','28.2767','0',0,0);
-	--(5740,4,668,668,'Halls of Reflection (The Impenetrable Door)','5354.01','2053.53','707.695','0.785398',0,0);
+	-- (5740,4,668,668,'Halls of Reflection (The Impenetrable Door)','5354.01','2053.53','707.695','0.785398',0,0);
