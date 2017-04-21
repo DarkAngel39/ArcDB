@@ -47,7 +47,7 @@ UPDATE `creature_spawns` SET `channel_spell`=46906,`channel_target_sqlid_creatur
 UPDATE `creature_spawns` SET `movetype`=0 WHERE `id` IN (107273,109909);
 DELETE FROM `creature_waypoints` WHERE `spawnid` IN (107273,109909);
 
-UPDATE `arcclean`.`creature_proto` SET `minlevel`=80, `maxlevel`=80, `faction`=1885 WHERE  `entry`=31030;
+UPDATE `creature_proto` SET `minlevel`=80, `maxlevel`=80, `faction`=1885 WHERE  `entry`=31030;
 
 SET @CGUID := 200607;
 DELETE FROM `creature_spawns` WHERE `id` BETWEEN @CGUID+0 AND @CGUID+23;
