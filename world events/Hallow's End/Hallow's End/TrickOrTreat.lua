@@ -1,0 +1,27 @@
+local SPELL_TREATED = 24755
+local SPELL_TREAT = 24715
+local inns = {295,1247,1464,2352,2388,3934,5111,5688,5814,6272,6727,6734,6735,6736,6737,6738,6739,6740,6741,6746,6747,6778,6790,6791,6806,6807,6928,6929,6930,7714,7731,7733,7736,7737,7744,8931,8999,9356,9501,11103,11106,11116,11118,12196,14731,15174,15397,15433,16256,16458,16542,16553,16602,16618,16739,16826,17553,17630,18245,18251,18649,18905,18906,18907,18908,18913,18914,18957,19046,19232,19296,19319,19352,19470,19495,19531,19571,21088,21110,21744,21746,22922,23143,23731,23937,23995,24033,24057,24149,24208,24342,25036,25245,25278,26375,26596,26680,26709,26985,27027,27042,27052,27066,27069,27125,27148,27174,27187,27950,28038,28686,28687,28791,29532,29583,29904,29926,29944,29963,29971,30005,30308,31115,31433,31557,32411,32413,32418,33970,33971}
+local tricks = {24713,24735,24924,24736,24927,24710,24711,24753,24708,24709,24723,24925,24926}
+
+function OnChatHallow(event, pPlayer, msg, Type, Language, Misc)
+local target = pPlayer:GetSelection()
+if(target ~= nil and pPlayer:HasAura(SPELL_TREATED) == false)then
+	if(msg == ".trick" and target:IsCreature())then
+		for i = 1,#inns do
+			if(target:GetEntry() == inns[i] and pPlayer:GetDistance(target) < 10)then
+				local trick = math.random(1,2)
+				if(trick == 1)then
+					target:FullCastSpellOnTarget(SPELL_TREAT,pPlayer)
+				elseif(trick == 2)then
+					local tr = math.random(1,#tricks)
+					pPlayer:FullCastSpell(tricks[tr])
+				end
+				SetDBCSpellVar(SPELL_TREATED, "c_is_flags", 0x01000)
+				target:FullCastSpellOnTarget(SPELL_TREATED,pPlayer)
+			end
+		end
+	end
+end
+end
+
+RegisterServerHook(16, OnChatHallow)
